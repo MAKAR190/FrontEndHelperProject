@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ourTeam{
+    display: flex;
+    justify-content: center;
+    color: #F4F7FE;
+
+}
+.div{
+    background-color: aqua;
+}
