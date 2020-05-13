@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522 623" width="522" height="623">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-1196 308L170 308L170 3126L-1196 3126Z" />
+		</clipPath>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="260.914" y1="617.657" x2="260.914" y2="5.67">
+			<stop offset="0" stop-color="#0e2661"  />
+			<stop offset="1" stop-color="#04113a" stop-opacity="0" />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+	</style>
+	<g id="home" clip-path="url(#cp1)">
+		<g id="первая страничка ">
+			<g id="фигуры фон ">
+				<path id="Прямоугольник, скругл. углы 2 копия" class="shp0" d="M60.82 53.62L402.76 6.24C437.31 1.45 468.38 27.25 472.16 63.86L516.7 494.75C520.48 531.36 495.55 564.92 461 569.71L119.06 617.09C84.52 621.87 53.45 596.08 49.66 559.46L5.13 128.58C1.34 91.97 26.28 58.41 60.82 53.62Z" />
+			</g>
+		</g>
+	</g>
+</svg>

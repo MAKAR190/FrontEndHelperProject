@@ -6,51 +6,167 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Front-end Helper</title>
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Kadwa&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   </head>
   <body>
-  <header class="header">
-    <nav class="navigation">
-      <a href="" class="logo"><span class="logo-span">Front-end</span>Helper</a>
-      <ul class="menu">
-        <li class="menu-item"><a href="#" class="menu-items--1">Home</a></li>
-        <li class="menu-item"><a href="#" class="menu-items--2">Video Gallery</a></li>
-        <li class="menu-item"><a href="#" class="menu-items--3">About Us</a></li>
-      </ul>
+      <div class="wrap">
+        <!-- хедер -->
+      <header class="header">
+        <nav class="navigation">
+          <a href="" class="logo"><img class="header-img" src="./img/лого .svg" alt=""></a>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="" class="nav-link">Главная</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Про нас</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Видеогалерея</a></li>
+            <li class="nav-item"><a href="" class="nav-link"></a></li>
+          </ul>
+        </nav>
+      </header>
+        <!-- хедер -->
+      <!-- <div class="round">Night Mode</div> -->
+      <!-- стрелка -->
+      <a href="#" class="arrow">&uarr;</a>
+        <!-- стрелка -->
     </nav>
   </header>
   <main>
+    <!-- вступная секция -->
+    <section class="home-intro">
+      <div class="home-text">
+        <h4 class="home-tittle">Приветствуем!</h4>
+        <p class="home-intro-text">На этой странице ты сможешь опробовать главную идею нашего сайта - заказывать скрипты, предлложить свои и скачивать товары.</p>
+      </div>
+      <img src="" alt="" class="home-intro-img">
+    </section>
+    <!-- вступная секция -->
+    </div>
+    <!-- Слайдер -->
+    <section class="slider">
+      <div class="all">
+        <input checked type="radio" name="respond" id="desktop">
+        <article id="slider">
+          <input checked type="radio" name="slider" id="switch1">
+          <input type="radio" name="slider" id="switch2">
+          <input type="radio" name="slider" id="switch3">
+          <input type="radio" name="slider" id="switch4">
+          <input type="radio" name="slider" id="switch5">
+          <div id="slides">
+            <div id="overflow">
+              <div class="image">
+                <article><div class="article-wrap"><img class="slider-img" src="./img/заказы.png"><div class="slider-text"><h4>Заказы</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse repellendus consectetur! Fugiat, porro quis!
+                </p></div></div></article>
+                <article><div class="article-wrap"><img class="slider-img" src="./img/товары.svg"><div class="slider-text"><h4>Товары</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse repellendus consectetur! Fugiat, porro quis!
+                </p></div></div></article>
+                <article><div class="article-wrap"><img class="slider-img" src="./img/фичи.svg"><div class="slider-text"><h4>Заказы</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse repellendus consectetur! Fugiat, porro quis!
+                </p></div></div></article>
+                <article><div class="article-wrap"><img class="slider-img" src="./img/видеогалерея.svg"><div class="slider-text"><h4>Заказы</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse repellendus consectetur! Fugiat, porro quis!
+                </p></div></div></article>
+              </div>
+            </div>
+          </div>
+          <div id="controls">
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
+          </div>
+          <div id="active">
+            <label for="switch1"></label>
+            <label for="switch2"></label>
+            <label for="switch3"></label>
+            <label for="switch4"></label>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Слайдер -->
+      <!-- секция товаров -->
     <div class="wrapper">
       <div class="goods-categories">
         <ul class="categories-list">
-          <li class="categories-item"><button>Scripts</button></li>
-          <li class="categories-item"><button>Animations</button></li>
-          <li class="categories-item"><button>Clear filters</button></li>
+          <li class="categories-item"><a href="#" data-action="scripts" class="categories-btn">Скрипты</a></li>
+          <li class="categories-item"><a href="#" data-action="animations" class="categories-btn">Анимации</a></li>
+          <li class="categories-item"><a href="#" data-action="clearFilters" id="clear" class="categories-btn">Убрать фильтр</a></li>
         </ul>
       </div>
       <div class="goods-menu">
         <ul class="list">
-          <li class="list-item">
+          <li  id="script" class="list-item">
             <img class="list-img" src="./img/gallery.gif" alt="">
             <div data-action="open" class="open">Open</div>
           </li>
-          <li class="list-item">
+          <li id="animation" class="list-item">
             <img class="list-img" src="./img/coolPoiskovik.jpg" alt="">
             <div data-action="openTwo" class="openTwo">Open</div>
-  
           </li>
-          <li class="list-item">
+          <li id="script" class="list-item">
             <img class="list-img" src="./img/timer.jpg" alt="">
             <div data-action="openThree" class="openThree">Open</div>
           </li>
         </ul>
       </div>
     </div>
+    <!-- секция товаров -->
+    <!-- секция заказов -->
+    <section class="orders">
+      <div class="orders-box">
+        <form action="" class="orders-form">
+          <h2 class="orders-tittle">Обратная связь</h2>
+          <input placeholder="Введите название*" type="text" class="orders-input">
+          <input placeholder="Введите свой почтовий ящик*" type="text" class="orders-input">
+          <textarea  placeholder="Описание*" name="" id="" cols="30" rows="10" class="orders-message"></textarea>
+          <div class="btn-wrap">
+          <div class="wrapperOfW">
+            <button class="a-wr">
+          <a href="#" class="orders-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            OK
+          </a>
+          </button>
+          </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- секция заказов -->
+    <!-- футер -->
+   <footer class="footer">
+     <div class="footer-wrapper">
+    <a href="" class="logo"><img class="header-img" src="./img/logo2.svg" alt=""></a>
+    <div class="footer-icons">
+      <div class="icons-wrapper"><img src="./img/иконка геолокация.svg" alt="">
+      <p>XX XXX XXX X</p></div>
+      <div id="icons-bag" class="icons-wrapper"><img src="./img/иконка тел.svg" alt="">
+      <p>+380955935600</p></div></div>
+      <div class="middle">
+        <a id="one" class="btn" href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a id="two" class="btn" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a id="four" class="btn" href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a id="five" class="btn" href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      </div>
+      <hr color="white">
+      <p class="copyright">&copy 2020 Front-end Helper</p>
+   </footer>
+  <!-- футер -->
     <!-- товари -->
     <div class="onclick">
-      <h2 class="onclick-tittle">Test</h2>
+      
       <button data-action="close" class="close">X</button>
+          <img src="./img/coolButton.jpg" alt="" class="onclick-img">
       <div class="onclick-box">
-        <img src="./img/coolButton.jpg" alt="" class="onclick-img">
+        <h2 class="onclick-tittle">Test</h2>
         <p class="onclick-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, est?</p>
       </div>
       <button class="onclick-button"><a href="./img/coolButton.jpg" download="coolButton.jpg">Download</a></button>
@@ -75,7 +191,7 @@
         <button class="onclick-button">Download</button>
       </div>
       <!-- товари -->
+  
   </main>
-
   </body>
 </html>
