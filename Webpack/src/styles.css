@@ -103,7 +103,7 @@ outline: none;
   position: relative;
 }
 
-
+ 
 /*меню товаров*/
 .wrapper {
   position: relative;
@@ -187,6 +187,12 @@ outline: none;
   height: 200px;
   display: block;
 }
+.menu-items--1{
+    text-decoration: none;
+    color:#dc143c;
+    font-size: 23px;
+    font-family: 'Kadwa';
+ }  
 .goods-menu {
   display: flex;
   justify-content: space-around;
@@ -484,8 +490,8 @@ a {
   height: 1000px;
 }
 
-.home-text {
-}
+/* .home-text {
+} */
 .home-tittle {
   font-size: 36px;
   letter-spacing: 1px;
@@ -603,9 +609,6 @@ hr {
   position: relative;
   /* margin-bottom: 10%; */
   text-decoration: none;
-}
-.btn-wrap {
-  /* overflow: hidden; */
 }
 
 .a-wr {

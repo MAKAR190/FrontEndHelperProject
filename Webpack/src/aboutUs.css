@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ourTeam{
+    display: flex;
+    justify-content: center;
+    color: #F4F7FE;
+    margin-top: -320px;
+
+}
+.fone{
+    background-image: url(./img/fon.png);
+    background-size: cover;
+    height: 387px;
+}
+
+/* .photo-img{
+width: 400px;
+height: 500px;
+} */
+.photo-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top: 70px;
+}
+.photo-title{
+    text-align: center;
+    font-size: 25px;
+    font-family: Candara,Candara-Bold,AdobeInvisFont,MyriadPro-Regular;
+}
+.photo-descr{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    font-family: "Candara";
+}
+.comments{
+    margin-top:100px;
+    text-align: center;
+    font-size: 48px;
+color: #001c2f;
+font-family: "Candara";
+font-weight: bold;
+text-align: center;
+
+}
+.comment-photo{
+    border-radius: 50%;
+    border-color:gray;
+    width: 96px;
+    height: 104px;
+    border:2px solid rgb(200, 199, 199);
+    
+
+}
+.comment{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    align-items: center;
+    list-style: none;
+
+}
+.comment-comment{
+    width: 420px;
+    height: 49px;
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "Candara";
+    text-align: center;
+    margin-top: 3%;
+}
+.comment-text{
+    padding: 3%;
+    
+}
+.comment-name{
+    font-size: 24px;
+color: #001c2f;
+font-family: "Candara";
+font-weight: bold;
+text-align: center;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+.job{
+    font-size: 20px;
+    color: #140d61;
+    font-family: "Candara";
+    font-weight: bold;
+}
+.hover-box {
+    display: none;
+    width: 270px;
+    height: 270px;
+  background-color: #87cefa54; 
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.6s;
+    z-index: 1;
+    margin-top: 90px;
+  }
+  
+  
+   
+  .team-member:hover .hover-box {
+    display: block;
+
+  }
+   
+  .team-member:hover .member-name {
+    color: #E8EAEB;
+    font-size: 24px;
+  }
+   
+  .quote {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30%;
+    
+  }
+   
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+   
+  .member-social-link {
+    display: inline-block;
+    width: 43px;
+    height: 42px;
+    margin: 4px;
+    background-color: #4b4b4bab;
+    background-image: url(./img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    width: 50px;
+height: 50px;
+border-radius: 10px;
+filter: drop-shadow(0px 2px 2px rgba(0,76,105,0.3));
+background-color: #e6e6e6;
+  }
+   
+  .member-social-link:nth-of-type(2) {
+    background-image: url(./img/Instagram.png);
+  }
+   
+  .team-list {
+    width: 92%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+   
+  }
+   
+  .team-member {
+    position: relative;
+    width: 270px;
+  }
+   
+  .member-name {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    
+    transition: 0.6s;
+  }
+   
+  .member-position {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    color: gray;
+   
+  }
+   
+  .member-photo {
+    width: 270px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+   
+  }
+   
+  .overflow {
+    width: 270px;
+    height: 270px;
+    overflow: hidden;
+    margin-top: 90px;
+  }
+ 
