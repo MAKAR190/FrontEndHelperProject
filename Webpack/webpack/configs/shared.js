@@ -3,6 +3,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const WebpackBar = require('webpackbar');
 const paths = require('../utils/paths');
 
+
 module.exports = env => ({
   mode: env.mode,
   context: paths.SRC_DIR,
@@ -71,5 +72,6 @@ module.exports = env => ({
     new CleanWebpackPlugin(),
     new FriendlyErrorsWebpackPlugin(),
     new WebpackBar(),
+    
   ],
 });

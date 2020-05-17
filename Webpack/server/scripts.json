@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "scriptGallery",
+    "gifUrl": "./img/gallery.gif",
+    "download": "https://drive.google.com/uc?export=download&id=14-Cal-AVHLVfIU5lbNsSsXiRcCCFEgOh",
+    "type": "script"
+  },
+  {
+    "id": 2,
+    "name": "animationBtns",
+    "gifUrl": "./img/hoverBtns.gif",
+    "download": "https://drive.google.com/uc?export=download&id=1uv6hwWNqzh2ViUyrw_J_Mq_24ewaesRx",
+    "type": "animation"
+  },
+  {
+    "id": 3,
+    "name": "scriptTimer",
+    "gifUrl": "./img/timer.gif",
+    "download": "https://drive.google.com/uc?export=download&id=1rN635JSXidQGg2pFoe_YE_yzPtoqg-ot",
+    "type": "script"
+  },
+  {
+    "id": 4,
+    "name": "animationContacts",
+    "gifUrl": "./img/contactsHover.gif",
+    "download": "https://drive.google.com/uc?export=download&id=1pD4n1HlaVfO95PVk1RUHNDIq8Nqgql79",
+    "type": "animation"
+  },
+  {
+    "id": 5,
+    "name": "animationImg",
+    "gifUrl": "./img/hoverImg.gif",
+    "download": "https://drive.google.com/uc?export=download&id=1vnM9ZTGAy4qygdu6JpQCyuw4BfA6zKnb",
+    "type": "animation"
+  },
+  {
+    "id": 6,
+    "name": "animationTittle",
+    "gifUrl": "./img/hoverTittle.gif",
+    "download": "https://drive.google.com/uc?export=download&id=1Mn5cMtJORDpbggUyI34J8IzywfCq9gWX",
+    "type": "animation"
+  },
+  {
+    "id": 7,
+    "name": "scriptNightMode",
+    "gifUrl": "./img/nightMode.gif",
+    "download": "https://drive.google.com/uc?export=download&id=1ukypjtz1P2r10lpLFqNFGZFkMssmGSLQ",
+    "type": "script"
+  },
+  {
+    "id": 8,
+    "name": "animationSlider",
+    "gifUrl": "./img/slider.gif",
+    "download": "https://drive.google.com/uc?export=download&id=1ar98sYVP86alt9q0xc0VXNtcBZ2ajjZa",
+    "type": "animation"
+  }
+]

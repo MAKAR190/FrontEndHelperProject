@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Front-end Helper</title>
+    <!-- <link rel="stylesheet" type="text/html" href="dist/basicLightbox.min.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Kadwa&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   </head>
   <body>
       <div class="wrap">
         <!-- хедер -->
-      <header class="header">
+      <header id="header" class="header">
         <nav class="navigation">
           <a href="" class="logo"><img class="header-img" src="./img/лого .svg" alt=""></a>
           <ul class="nav-menu">
             <li class="nav-item"><a href="" class="nav-link">Главная</a></li>
             <li class="nav-item"><a href="" class="nav-link">Про нас</a></li>
             <li class="nav-item"><a href="" class="nav-link">Видеогалерея</a></li>
-            <li class="nav-item"><a href="" class="nav-link"></a></li>
+            <li class="nav-item"><img src="./img/лупаИконка .svg" alt="" class="input-img"><input placeholder="Поиск по сайту" type="text" class="header-input"></li>
           </ul>
         </nav>
       </header>
         <!-- хедер -->
       <!-- <div class="round">Night Mode</div> -->
       <!-- стрелка -->
-      <a href="#" class="arrow">&uarr;</a>
+      <a href="#header" class="arrow">&uarr;</a>
+      <button class="html">html</button>
         <!-- стрелка -->
     </nav>
   </header>
@@ -53,13 +55,13 @@
           <div id="slides">
             <div id="overflow">
               <div class="image">
-                <article><div class="article-wrap"><img class="slider-img" src="./img/заказы.png"><div class="slider-text"><h4>Заказы</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse repellendus consectetur! Fugiat, porro quis!
+                <article><div class="article-wrap"><img class="slider-img" src="./img/заказы.png"><div class="slider-text"><h4>Заказы</h4><p>Здесь вы сможете очень легко заказывать скрипты, анимации или фичи по фронт-енду, которые вам придут в голову. Все что вам нужно - просто заполнить короткую форму и вы получите ответ на ваш мейл.
                 </p></div></div></article>
-                <article><div class="article-wrap"><img class="slider-img" src="./img/товары.svg"><div class="slider-text"><h4>Товары</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse repellendus consectetur! Fugiat, porro quis!
+                <article><div class="article-wrap"><img class="slider-img" src="./img/товары.svg"><div class="slider-text"><h4>Товары</h4><p>Главная фишка нашего сайта - это товары, которые можно осмотреть и скачать бесплатно, если он вас заинтересовал.
                 </p></div></div></article>
-                <article><div class="article-wrap"><img class="slider-img" src="./img/фичи.svg"><div class="slider-text"><h4>Заказы</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse repellendus consectetur! Fugiat, porro quis!
+                <article><div class="article-wrap"><img class="slider-img" src="./img/фичи.svg"><div class="slider-text"><h4>Ваши фичи</h4><p>Форма на сайте создана не только для заказов, но и для ваших скриптов или анимаций, которые вы сможете отправлять и возможно мы вставим ваш скрипт в наш сайт!
                 </p></div></div></article>
-                <article><div class="article-wrap"><img class="slider-img" src="./img/видеогалерея.svg"><div class="slider-text"><h4>Заказы</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse repellendus consectetur! Fugiat, porro quis!
+                <article><div class="article-wrap"><img class="slider-img" src="./img/видеогалерея.svg"><div class="slider-text"><h4>Видеогалерея</h4><p>На сайте присутствуют множество видеороликов, которые очень позновательние в сфере фронт-енда.
                 </p></div></div></article>
               </div>
             </div>
@@ -84,26 +86,13 @@
     <div class="wrapper">
       <div class="goods-categories">
         <ul class="categories-list">
-          <li class="categories-item"><a href="#" data-action="scripts" class="categories-btn">Скрипты</a></li>
-          <li class="categories-item"><a href="#" data-action="animations" class="categories-btn">Анимации</a></li>
-          <li class="categories-item"><a href="#" data-action="clearFilters" id="clear" class="categories-btn">Убрать фильтр</a></li>
+          <li data-action="scripts" class="categories-item"><a href="" data-action="scripts" class="categories-btn">Скрипты</a></li>
+          <li data-action="animations" class="categories-item"><a href="" data-action="animations" class="categories-btn">Анимации</a></li>
+          <li data-action="clearFilters" class="categories-item"><a href="" data-action="clearFilters" id="clear" class="categories-btn">Убрать фильтр X</a></li>
         </ul>
       </div>
       <div class="goods-menu">
-        <ul class="list">
-          <li  id="script" class="list-item">
-            <img class="list-img" src="./img/gallery.gif" alt="">
-            <div data-action="open" class="open">Open</div>
-          </li>
-          <li id="animation" class="list-item">
-            <img class="list-img" src="./img/coolPoiskovik.jpg" alt="">
-            <div data-action="openTwo" class="openTwo">Open</div>
-          </li>
-          <li id="script" class="list-item">
-            <img class="list-img" src="./img/timer.jpg" alt="">
-            <div data-action="openThree" class="openThree">Open</div>
-          </li>
-        </ul>
+      <ul class="list" id="all"></ul>
       </div>
     </div>
     <!-- секция товаров -->
@@ -130,6 +119,7 @@
           </div>
         </form>
       </div>
+
     </section>
     <!-- секция заказов -->
     <!-- футер -->
@@ -158,40 +148,53 @@
       </div>
       <hr color="white">
       <p class="copyright">&copy 2020 Front-end Helper</p>
+
    </footer>
   <!-- футер -->
     <!-- товари -->
     <div class="onclick">
       
       <button data-action="close" class="close">X</button>
-          <img src="./img/coolButton.jpg" alt="" class="onclick-img">
-      <div class="onclick-box">
-        <h2 class="onclick-tittle">Test</h2>
-        <p class="onclick-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, est?</p>
-      </div>
-      <button class="onclick-button"><a href="./img/coolButton.jpg" download="coolButton.jpg">Download</a></button>
-    </div>
-  
-    <div class="onclickTwo">
-      <h2 class="onclick-tittle">TEST</h2>
-      <button data-action="closeTwo" class="closeTwo">X</button>
+      <h2 class="onclick-tittle">Test</h2>
+          
       <div class="onclick-box">
         <img src="./img/coolButton.jpg" alt="" class="onclick-img">
         <p class="onclick-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, est?</p>
-        <button class="onclick-button">Download</button>
       </div>
-  
+      <div id="for-modal" class="btn-wrap">
+        <div class="wrapperOfW">
+          <button class="a-wr">
+            <a href="#" class="orders-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              OK
+            </a>
+          </button>
+        </div>
+      </div>
+
+  <div id="html" hidden>
+    <div class="onclick-box">
+      <img src="./img/coolButton.jpg" alt="" class="onclick-img">
+      <p class="onclick-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, est?</p>
     </div>
-    <div class="onclickThree">
-      <h2 class="onclick-tittle">TESTT</h2>
-      <button data-action="closeThree" class="closeThree">X</button>
-      <div class="onclick-box">
-        <img src="./img/coolButton.jpg" alt="" class="onclick-img">
-        <p class="onclick-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, est?</p>
-        <button class="onclick-button">Download</button>
+    <div id="for-modal" class="btn-wrap">
+      <div class="wrapperOfW">
+        <button class="a-wr">
+          <a href="#" class="orders-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            OK
+          </a>
+        </button>
       </div>
-      <!-- товари -->
-  
+  </div>
+
+
   </main>
   </body>
 </html>

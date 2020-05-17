@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 22" width="21" height="22">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-1093 -34L273 -34L273 2516L-1093 2516Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #d0d0d0 } 
+	</style>
+	<g id="gallery" clip-path="url(#cp1)">
+		<g id="шапка">
+			<g id="кнопка поиска ">
+				<path id="лупа иконка " class="shp0" d="M8.33 2C12.37 2 15.66 5.38 15.66 9.55C15.66 13.71 12.37 17.09 8.33 17.09C4.28 17.09 1 13.71 1 9.55C1 5.38 4.28 2 8.33 2ZM13.03 15.19L13.79 14.33L19.99 20.14L19.23 20.99L13.03 15.19Z" />
+			</g>
+		</g>
+	</g>
+</svg>

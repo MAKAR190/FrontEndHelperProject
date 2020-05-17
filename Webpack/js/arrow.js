@@ -8,11 +8,4 @@ window.addEventListener('scroll', function btn() {
   }
 });
 
-function toStart({ target }) {
-  if (target && pageYOffset <= 2304) {
-    pageYOffset = 0;
-    
-  }
-}
-let btn = document.querySelector('.arrow');
-btn.addEventListener('click', toStart);
+
