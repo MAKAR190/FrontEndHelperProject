@@ -8,7 +8,7 @@
 
 
 
-@media (max-width: 320px){
+@media (min-width: 320px){
   
   /* Header */
 
@@ -137,7 +137,7 @@
 
 .AboutUs-h1{
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     color: #001c2f;
     font-family: "Candara";
     font-weight: bold;
@@ -147,12 +147,12 @@
 .aboutUs-intro{
     display: flex;
     align-items: center;
-
+    padding: 7%;
 }
 
 .aboutUs-photoCart1{
-    width: 150px;
-    height: 200px;
+    width: 170px;
+    height: 220px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -161,8 +161,8 @@
 }
 
 .aboutUs-photoCart2{
-    width: 150px;
-    height: 200px;  
+    width: 170px;
+    height: 220px;  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -171,8 +171,8 @@
 }
 
 .aboutUs-photoCart3{
-    width: 150px;
-    height: 200px;
+    width: 170px;
+    height: 220px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -185,8 +185,8 @@
 }
 
 .aboutUs-photoText{
-    width: 400px;
-    height: 550px;
+    width: 200px;
+    height: 250px;
     position: absolute;
     position: relative;
     left: -80px;
@@ -195,29 +195,28 @@
 
 .sectionAboutUs{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .aboutUs-photoText>p,h2{
-    margin-top: 8%;
+    margin-top: 2%;
 }
 
 .aboutUs-photoText>h2{
-    font-size: 40px;
+    font-size: 20px;
     color: #001c2f;
     font-family: "Candara";
     font-weight: bold;
-    padding: 5%;
+    padding: 9%;
 }
 
 .aboutUs-photoText>p{
-    width: 375px;
-    height: 147px;
-    font-size: 28px;
+    width: 150px;
+    height: 150px;
+    font-size: 14px;
     color: #001c2f;
     font-family: "Candara";
-    padding: 5%;
+    padding: 9%;
 }
 
 
@@ -230,59 +229,9 @@
 
 
 
+@media(min-width: 1300px){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1360px){
-  
+ 
   /* Header */
 
   .header{
@@ -496,7 +445,25 @@
 
 /* About Us END */
 
-} 
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
