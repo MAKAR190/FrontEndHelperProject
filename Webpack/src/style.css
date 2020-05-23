@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media(max-width:1300px){
 .ourTeam{
     display: flex;
     justify-content: center;
@@ -205,4 +206,46 @@ background-color: #e6e6e6;
     overflow: hidden;
     margin-top: 90px;
   }
- 
+}
+@media(min-width:320px){
+.fone{
+  width: 810px;
+  height: 600px;
+  display: block;
+}
+.team-list{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -0px;
+
+}
+.ourTeam{
+margin-bottom: -400px;
+margin-left: 600px;
+
+
+}
+.team-member{
+  margin-left: 10px;
+  margin-bottom: -80px ;
+}
+.member-name{
+  font-size: 23px;
+}
+.comment{
+  margin-left: 370px;
+  border-radius: 20px;
+  border-color: solid red 30px;
+}
+.comments{
+  margin-left: 290px;
+  margin-top: 100px;
+}
+.comment-comment{
+  font-size: 30px;
+}
+.member-position{
+  font-size: 20px;
+}
+}
