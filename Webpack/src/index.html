@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Front-end Helper</title>
-    <!-- <link rel="stylesheet" type="text/html" href="dist/basicLightbox.min.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Kadwa&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   </head>
@@ -14,24 +13,44 @@
         <!-- хедер -->
       <header id="header" class="header">
         <nav class="navigation">
-          <a href="" class="logo"><img class="header-img" src="./img/лого .svg" alt=""></a>
+          <a href="" class="logo"><img id="ONE"  class="header-img" src="./img/лого .svg" alt=""><img id="TWO" class="header-img" src="./img/logo2.svg" alt=""></a>
           <ul class="nav-menu">
             <li class="nav-item"><a href="" class="nav-link">Главная</a></li>
             <li class="nav-item"><a href="./aboutus.html" class="nav-link">Про нас</a></li>
             <li class="nav-item"><a href="" class="nav-link">Видеогалерея</a></li>
-            <li class="nav-item"><img src="./img/лупаИконка .svg" alt="" class="input-img"><input placeholder="Поиск по сайту" type="text" class="header-input"></li>
+            <li class="nav-item"><div data-action="night" class="round"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></div></li>
+
           </ul>
+        </nav>
+      </header>
+      <header id="mobileHeader" class="mobileHeader">
+        <nav class="navigationMobile">
+          <a href="" class="logo"><img id="forHeader" class="header-img" src="./img/лого .svg" alt=""><img id="TWOO" class="header-img" src="./img/logo2.svg" alt=""></a>
+<div class="dropdown">
+  <input type="checkbox" id="menu">
+  <label for="menu"><i class="fas fa-bars"></i></label>
+          <ul class="menuMobile">
+            <li class="mobile-items"><a id="LOGO" href="" class="logo"><img id="forMobile" class="header-img" src="./img/лого .svg" alt=""></a></li>
+            <li class="mobile-items"><a href="" class="mobile-links">Главная</a></li>
+            <li class="mobile-items"><a href="" class="mobile-links">Про нас</a></li>
+            <li class="mobile-items"><a href="" class="mobile-links">Видеогалерея</a></li>
+            <li class="mobile-items"><div data-action="night" class="mobileRound"><i id="sun" class="fas fa-sun"></i><i id="moon" class="fas fa-moon"></i></div></li>
+            
+          </ul>
+          </div>
         </nav>
       </header>
         <!-- хедер -->
       <!-- <div class="round">Night Mode</div> -->
       <!-- стрелка -->
-      <a href="#header" class="arrow">&uarr;</a>
-      <button class="html">html</button>
+        <a href="#sectionHome" class="arrow">&uarr;</a>
+      
+
+      <!-- <button class="html">html</button> -->
         <!-- стрелка -->
   <main>
     <!-- вступная секция -->
-    <section class="home-intro">
+    <section id="sectionHome" class="home-intro">
       <div class="home-text">
         <h4 class="home-tittle">Приветствуем!</h4>
         <p class="home-intro-text">На этой странице ты сможешь опробовать главную идею нашего сайта - заказывать скрипты, предлложить свои и скачивать товары.</p>
@@ -55,7 +74,7 @@
               <div class="image">
                 <article><div class="article-wrap"><img class="slider-img" src="./img/заказы.png"><div class="slider-text"><h4>Заказы</h4><p>Здесь вы сможете очень легко заказывать скрипты, анимации или фичи по фронт-енду, которые вам придут в голову. Все что вам нужно - просто заполнить короткую форму и вы получите ответ на ваш мейл.
                 </p></div></div></article>
-                <article><div class="article-wrap"><img class="slider-img" src="./img/товары.svg"><div class="slider-text"><h4>Товары</h4><p>Главная фишка нашего сайта - это товары, которые можно осмотреть и скачать бесплатно, если он вас заинтересовал.
+                <article><div id="secondSlider" class="article-wrap"><img class="slider-img" src="./img/товары.svg"><div class="slider-text"><h4>Товары</h4><p>Главная фишка нашего сайта - это товары, которые можно осмотреть и скачать бесплатно, если он вас заинтересовал.
                 </p></div></div></article>
                 <article><div class="article-wrap"><img class="slider-img" src="./img/фичи.svg"><div class="slider-text"><h4>Ваши фичи</h4><p>Форма на сайте создана не только для заказов, но и для ваших скриптов или анимаций, которые вы сможете отправлять и возможно мы вставим ваш скрипт в наш сайт!
                 </p></div></div></article>
@@ -81,19 +100,23 @@
     </section>
     <!-- Слайдер -->
       <!-- секция товаров -->
+<h2 id="OurTovar"  class="goodsTitle">Наш Продукт</h2>
     <div class="wrapper">
       <div class="goods-categories">
         <ul class="categories-list">
-          <li data-action="scripts" class="categories-item"><a href="" data-action="scripts" class="categories-btn">Скрипты</a></li>
-          <li data-action="animations" class="categories-item"><a href="" data-action="animations" class="categories-btn">Анимации</a></li>
-          <li data-action="clearFilters" class="categories-item"><a href="" data-action="clearFilters" id="clear" class="categories-btn">Убрать фильтр X</a></li>
+          <li data-action="scripts" class="categories-item"><a  data-action="scripts" class="categories-btn">Скрипты</a></li>
+          <li data-action="animations" class="categories-item"><a id="animation" data-action="animations" class="categories-btn">Анимации</a></li>
+          <li data-action="clearFilters" class="categories-item"><a  data-action="clearFilters" id="clear" class="categories-btn">Убрать фильтр X</a></li>
         </ul>
       </div>
       <div class="goods-menu">
       <ul class="list" id="all"></ul>
       </div>
     </div>
-    <!-- секция товаров -->
+
+
+    <!-- секци
+      я товаров -->
     <!-- секция заказов -->
     <section class="orders">
       <div class="orders-box">
@@ -104,7 +127,7 @@
           <textarea  placeholder="Описание*" name="" id="" cols="30" rows="10" class="orders-message"></textarea>
           <div class="btn-wrap">
           <div class="wrapperOfW">
-            <button class="a-wr">
+            <button  class="a-wr">
           <a href="#" class="orders-btn">
             <span></span>
             <span></span>
@@ -123,23 +146,24 @@
     <!-- футер -->
    <footer class="footer">
      <div class="footer-wrapper">
-    <a href="" class="logo"><img class="header-img" src="./img/logo2.svg" alt=""></a>
+       <div class="logo-footer-wrap">
+    <a href="" class="logo"><img id="forFooter" class="header-img" src="./img/logo2.svg" alt=""></a>
     <div class="footer-icons">
       <div class="icons-wrapper"><img src="./img/иконка геолокация.svg" alt="">
       <p>XX XXX XXX X</p></div>
       <div id="icons-bag" class="icons-wrapper"><img src="./img/иконка тел.svg" alt="">
-      <p>+380955935600</p></div></div>
+      <p>+380955935600</p></div></div></div>
       <div class="middle">
-        <a id="one" class="btn" href="#">
+        <a target="_blank" id="one" class="btn" href="https://www.facebook.com/Front-end-Helper-100141135062133">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a id="two" class="btn" href="#">
+        <a target="_blank"  id="two" class="btn" href="https://twitter.com/EndHelper">
           <i class="fab fa-twitter"></i>
         </a>
-        <a id="four" class="btn" href="#">
+        <a target="_blank"  id="four" class="btn" href="https://www.instagram.com/frontendhelper/?hl=ru">
           <i class="fab fa-instagram"></i>
         </a>
-        <a id="five" class="btn" href="#">
+        <a target="_blank"  id="five" class="btn" href="https://www.youtube.com/channel/UCCeUY147981HBCI0joWLgHQ/?guided_help_flow=5">
           <i class="fab fa-youtube"></i>
         </a>
       </div>
@@ -148,57 +172,346 @@
       <p class="copyright">&copy 2020 Front-end Helper</p>
 
    </footer>
-  <!-- футер -->
-    <!-- товари -->
-    <div class="onclick">
-      
-      <button data-action="close" class="close">X</button>
-      <h2 class="onclick-tittle">Test</h2>
-          
-      <div class="onclick-box">
-        <img src="./img/coolButton.jpg" alt="" class="onclick-img">
-        <p class="onclick-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, est?</p>
+    <!-- Header -->
+    
+    
+    
+    <!-- Header END -->
+    
+    <!-- Section -->
+    
+    <section class="section1">
+      <div class="section1-text">
+        <h1 class="section1-h1">Добро пожаловать на наш сайт!</h1>
+        <p class="section1-p">Здесь ты узнаешь немного иформации о нас, создателей этого сайта</p>
       </div>
-      <div id="for-modal" class="btn-wrap">
-        <div class="wrapperOfW">
-          <button class="a-wr">
-            <a href="#" class="orders-btn">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              OK
-            </a>
-          </button>
+      <img src="" alt="">
+    </section>
+    
+    <!-- Section END -->
+    
+    <!-- About Us -->
+    
+    <h1 class="AboutUs-h1">Почему мы?</h1>
+    
+    <section class="sectionAboutUs">
+      <ul class="card-menu">
+        <li class="card-item">
+          <div class="aboutUs-intro">
+            <div class="aboutUs-photoCart1"></div>
+            <div class="aboutUs-photoText">
+              <h2>Обновление</h2>
+              <p>На нашем сайте обновление происходит каждую неделю и добавляются новые скрипты, анимации и фичи.</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-item">
+          <div class="aboutUs-intro">
+            <div class="aboutUs-photoCart2"></div>
+            <div class="aboutUs-photoText">
+              <h2>Бесплатность</h2>
+              <p>На нашем сайте все бесплатно, качественно и удобно, что и делает наш сайт уникальним!</p>
+            </div>
+          </div>
+        </li>
+        <li class="card-item">
+          <div class="aboutUs-intro">
+            <div class="aboutUs-photoCart3"></div>
+            <div class="aboutUs-photoText">
+              <h2>Прознавательность</h2>
+              <p>У нас есть много видеоурков на странице видеогалерея, где можно много чему научиться. Также есть список
+                IT-каналов, за которыми вы можете следить.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- About Us END -->
+    <section class="aboutUs">
+    <div class="fones">
+      <div class="fone"><img class="fone-pic" src="./img/forOurTeam.svg" alt=""></div>
+      <div class="foneTwo"><img class="fone-pic-two" src="./img/forOurTeam2.svg" alt=""><img class="fone-pic-three" src="./img/forOurTeam3.svg" alt=""></div>
+      </div>
+      <div class="none">
+      <h1 class="ourTeam">Наша Команда</h1>
+      </div>
+    
+      <ul class="team-list">
+        <li class="team-member">
+          <div class="overflow"><img src="./img/misha.jpg" alt="" class="member-photo"></div>
+          <h4 class="member-name">Миша Даниш</h4>
+          <p class="member-position">Content-manager</p>
+          <div class="hover-box">
+            <p class="quote">Это Миша - наш контент-менеджер. Он отвечал за идеи сайта и за одну из частей страници "Про нас" и часть страници "Видеогалереи". Также участвовал в презентации проекта.</p>
+            <div class="social-links">
+    
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100040288848889" class="member-social-link"></a>
+              <a  target="_blank" href="https://www.instagram.com/mai_ban_dariya/?hl=ru" class="member-social-link"></a>
+            </div>
+          </div>
+        </li>
+        <li class="team-member">
+          <div class="overflow"><img src="./img/makar.jpg" alt="" class="member-photo"></div>
+          <h4 class="member-name">Макар Луцький</h4>
+          <p class="member-position">FE-developer</p>
+          <div class="hover-box">
+            <p class="quote">Это Макар - наш тимлид. Он отвечал за идею сайта и главной страници. Также участвовал в презентации проекта.</p>
+            <div class="social-links">
+    
+              <a  target="_blank" href="https://www.facebook.com/makar.lutskyi" class="member-social-link"></a>
+              <a target="_blank" href="https://www.instagram.com/makarlutskyi/?hl=ru" class="member-social-link"></a>
+            </div>
+          </div>
+        </li>
+        <li class="team-member">
+          <div class="overflow"><img src="./img/bogdan.jpg" alt="" class="member-photo"></div>
+          <h4 class="member-name">Богдан Ковальский</h4>
+          <p class="member-position">Project Manager</p>
+          <div class="hover-box">
+            <p class="quote">Это Богдан - наш проджект менеджер. Он отвечал за часть страници "Про нас" и часть страници "Видеогалереи". </p>
+            <div class="social-links">
+    
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100049860696307" class="member-social-link"></a>
+              <a target="_blank" href="https://www.instagram.com/bogdan_kovalsky1/?hl=ru" class="member-social-link"></a>
+            </div>
+          </div>
+        </li>
+    
+      </ul>
+      <section class="feedbacks">
+        <h2 class="comments">Наши Отзивы</h2>
+        <ul class="comment">
+          <li class="comment-item">
+            <div class="comment-text">
+              <img id="Denis" class="comment-photo" src="./img/Denis.jpg" alt="" />
+              <h3 class="comment-name">Денис Литвинчук</h3>
+              <p class="job">Developer</p>
+              <p class="comment-comment">
+                Мне понравился сайт, особенно то, что товары можно скачивать бесплатно и поближе разгледеть информацию о нем. Также нравится ночной мод, очень удобно. 
+              </p>
+            </div>
+          </li>
+          <li class="comment-item">
+            <div class="comment-text">
+              <img class="comment-photo" src="./img/Ighor.jpg" alt="" />
+              <h3 class="comment-name">Ігор Шибко</h3>
+              <p class="job">Designer</p>
+              <p class="comment-comment">
+                Крутой сайт для новичков програмирования. Интересний дизайн, задумка и очень нравится, что на сайте есть направления на IT-канали, что би узнать для себя ещё что то новое.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </section>
+      <div class="Section1-VideoGallery">
+        <div class="Section1-VideoGallery-text">
+          <h1 class="Section1-VideoGallery-h1">Привет!</h1>
+          <p class="Section1-VideoGallery-p">Ты готов получать новые знания?</p>
+          <p class="Section1-VideoGallery-p">Тогда листай ниже и ты увидешь много полезных видео о фронтенде и список топовых
+            IT-каналов!</p>
+        </div>
+        <img src="" alt="">
+      </div>
+      
+      <!-- Section1-VideoGallery END -->
+      <h2 class="goodsTitle">Видеогалерея</h2>
+<div class="wrapperVideo">
+  <div class="goods-categoriesVideo">
+    <ul class="categories-list">
+      <li  data-action="scriptsVideo" class="categories-itemVideo"><a id="scriptsVideoo" data-action="scriptsVideo"
+          class="categories-btnVideo">Скрипты</a></li>
+      <li data-action="animations" class="categories-itemVideo"><a id="animationVideo" data-action="animationsVideo"
+          class="categories-btnVideo">Анимации</a></li>
+      <li data-action="clearFilters" class="categories-itemVideo"><a data-action="clearFiltersVideo" id="clearVideo"
+          class="categories-btnVideo">Убрать фильтр X</a></li>
+    </ul>
+  </div>
+  <div class="goods-menuVideo">
+    <ul class="listVideo"></ul>
+    </div>
+</div>
+      
+      
+      <div class="MaxSection3-VideoGallery">
+        <div class="IT-text-wr">
+        <img class="fone-pic" src="./img/forOurTeam.svg" alt="">
+        <img id="forIt" class="fone-pic" src="./img/forOurTeam.svg" alt="">
+        <div class="IT-intro">
+        <h1 class="Section3-VideoGallery-H1">Топ</h1>
+        <h1 class="Section3-VideoGallery-H1_">IT-каналов</h1>
         </div>
       </div>
-
-  <div id="html" hidden>
-    <div class="onclick-box">
-      <img src="./img/coolButton.jpg" alt="" class="onclick-img">
-      <p class="onclick-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, est?</p>
-    </div>
-    <div id="for-modal" class="btn-wrap">
-      <div class="wrapperOfW">
-        <button class="a-wr">
-          <a href="#" class="orders-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            OK
-          </a>
-        </button>
+        <div class="ul-IT-wrapper">
+        <ul class="Section3-VideoGallery Section3-VideoGallery-background">
+      
+          <li class="IT-item">
+            <div class="IT-wrapper">
+              <img src="./img/FireFhip.io.jpg" alt="FireFhip.io" class="Section3-VideoGallery-img">
+            </div>
+            <div class="IT-wrapper-text">
+              <h2 class="Section3-VideoGallery-h2 Section3-VideoGallery_Color">FireShip</h2>
+              <p class="Section3-VideoGallery-p Section3-VideoGallery_Color">High-intensity ⚡ code tutorials to help you build
+                & ship your app faster. Subscribe for new videos every week covering intermediate to advanced lessons about
+                JavaScript, Flutter, Firebase, and modern app development.
+              </p>
+            </div>
+            <div  id="for-modal" class="btn-wrap">
+              <div class="wrapperOfW">
+                <button class="a-wr">
+                  <a target="_blank" href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA" class="orders-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Ссылка
+                  </a>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="IT-item">
+            <div class="IT-wrapper">
+              <img src="./img/Минин.jpg" alt="Minin" class="Section3-VideoGallery-img">
+            </div>
+            <div class="IT-wrapper-text">
+              <h2 class="Section3-VideoGallery-h2 Section3-VideoGallery_Color">Владилен Минин</h2>
+              <p class="Section3-VideoGallery-p Section3-VideoGallery_Color">Меня зовут Владилен Минин и я являюсь автором
+                данного канала.
+                Тут вы найдете большое количество уроков, посвященных веб-разработке на языке javascript и на технологиях,
+                таких как: VueJS, ReactJS, Angular, NodeJS</p>
+            </div>
+            <div id="for-modal" class="btn-wrap">
+              <div class="wrapperOfW">
+                <button class="a-wr">
+                  <a target="_blank" href="https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw" class="orders-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Ссылка
+                  </a>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="IT-item">
+            <div class="IT-wrapper">
+              <img src="./img/DarkCode.jpg" alt="DarkCode" class="Section3-VideoGallery-img">
+            </div>
+            <div class="IT-wrapper-text">
+              <h2 class="Section3-VideoGallery-h2 Section3-VideoGallery_Color">DarkCode</h2>
+              <p class="Section3-VideoGallery-p Section3-VideoGallery_Color">DarkCode is a channel for Learning Web Designs,
+                Websites Building, Ui Designs using only HTML5 and CSS3 and some Javascript.
+                Our content is 100% free and easy to got it ♥.!</p>
+            </div>
+            <div id="for-modal" class="btn-wrap">
+              <div class="wrapperOfW">
+                <button class="a-wr">
+                  <a target="_blank" href="https://www.youtube.com/channel/UCD3KVjbb7aq2OiOffuungzw" class="orders-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Ссылка
+                  </a>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="Section3-VideoGallery">
+          <li class="IT-item">
+            <div class="IT-wrapper">
+              <img src="./img/Гоша Дударь.jpg" alt="Гоша Дударь" class="Section3-VideoGallery-img">
+            </div>
+            <div class="IT-wrapper-text">
+              <h2 class="Section3-VideoGallery-h2">Гоша Дударь</h2>
+              <p class="Section3-VideoGallery-p">Если вы хотите изучить веб программирование, то на канале уже сейчас можете
+                найти подходящие видео курсы по HTML, CSS, PHP, JavaScript, Ajax, различным фреймворкам и движкам, которые
+                обеспечивают быстрое и эффективное создание веб сайта.</p>
+            </div>
+            <div id="for-modal" class="btn-wrap">
+              <div class="wrapperOfW">
+                <button class="a-wr">
+                  <a target="_blank" href="https://www.youtube.com/user/PlurrimiTube" class="orders-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Ссылка
+                  </a>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="IT-item">
+            <div class="IT-wrapper">
+              <img src="./img/Loftblog.jpg" alt="LoftBlog" class="Section3-VideoGallery-img">
+            </div>
+            <div class="IT-wrapper-text">
+              <h2 class="Section3-VideoGallery-h2">LoftBlog</h2>
+              <p class="Section3-VideoGallery-p">LoftBlog — это лучшее место для изучения it-технологий. Десятки практических
+                уроков и курсов, где мы просто и весело будем учить вас только самому нужному и интересному, а именно, всему,
+                что необходимо для создания горячего web-сервиса или сайта. </p>
+            </div>
+            <div id="for-modal" class="btn-wrap">
+              <div class="wrapperOfW">
+                <button class="a-wr">
+                  <a target="_blank" href="https://www.youtube.com/user/loftblog" class="orders-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Ссылка
+                  </a>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="IT-item">
+            <div class="IT-wrapper">
+              <img src="./img/хауди хо.jpg" alt="Хауди Хо" class="Section3-VideoGallery-img">
+            </div>
+            <div class="IT-wrapper-text">
+              <h2 class="Section3-VideoGallery-h2">Хауди Хо</h2>
+              <p class="Section3-VideoGallery-p">Я - ХАУДИ ХО, здесь ты найдешь уроки по программированию, выпуски про хакинг,
+                подборки, топы, гайды и всё такое из типичной жизни айтишника.
+                При этом я стараюсь сделать это так, чтобы вообще любой человек понял о чём я говорю и чему учу.
+                Ведь программирование и мир IT технологий - это так просто и интересно!</p>
+            </div>
+            <div id="for-modal" class="btn-wrap">
+              <div class="wrapperOfW">
+                <button class="a-wr">
+                  <a target="_blank" href="https://www.youtube.com/channel/UC7f5bVxWsm3jlZIPDzOMcAg" class="orders-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Ссылка
+                  </a>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        </div>
       </div>
-<<<<<<< HEAD
+      
+      
+      
+      
+      <!-- Section3-VideoGallery END -->
+  <!-- футер -->
+    <!-- товари -->
+
+  <div class="lightbox js-lightbox">
+    <div class="lightbox__overlay"></div>
+  
+    <div class="lightbox__content">
+
   </div>
-=======
-      <!-- товари -->
-      </div>
-  </main>
->>>>>>> bogdan
+<button type="button" class="lightbox__button" data-action="close-lightbox">X</button>
 
-
-  </main>
   </body>
 </html>

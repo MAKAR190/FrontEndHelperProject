@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557 557" width="557" height="557">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M185 -1474L1551 -1474L1551 1610L185 1610Z" />
+		</clipPath>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="58.225" y1="33.269" x2="499.604" y2="523.47">
+			<stop offset="0.459" stop-color="#517dff"  />
+			<stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.502;fill: url(#grd1) } 
+	</style>
+	<g id="about us" clip-path="url(#cp1)">
+		<g id="команда ">
+			<g id="фон ">
+				<path id="Эллипс 2 копия 3" class="shp0" d="M192.28 507.58C65.69 459.73 1.86 318.32 49.71 191.73C97.56 65.15 238.96 1.31 365.55 49.16C492.14 97.01 555.97 238.42 508.12 365.01C460.27 491.59 318.86 555.43 192.28 507.58Z" />
+			</g>
+		</g>
+	</g>
+</svg>

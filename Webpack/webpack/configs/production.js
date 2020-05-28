@@ -49,10 +49,12 @@ module.exports = env => ({
         useShortDoctype: true,
       },
     }),
+
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
       chunkFilename: '[name].[id].[contenthash].css',
     }),
     new OptimizeCssAssetsPlugin({}),
   ],
+
 });
