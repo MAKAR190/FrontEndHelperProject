@@ -1,9 +1,9 @@
 import './styles.css';
 import './aboutUs.css';
-import btn from '../js/arrow';
+import btn from './js/arrow';
 import scripts from '../server/scripts.json';
 import video from '../server/video.json';
-import nightMode from '../js/nightMode';
+import nightMode from './js/nightMode';
 
 let array = scripts;
 let view = 'all';
