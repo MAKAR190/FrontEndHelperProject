@@ -53,6 +53,9 @@
     transform: scale(0.9);
     transition: transform 200ms ease-in-out;
   }
+.footer{
+  margin-top: 1180px;
+}
 
   .lightbox__image {
     width: auto;
@@ -760,7 +763,6 @@
     filter: drop-shadow(0 0 10.5px rgba(0, 0, 0, 0.2));
     background-color: #f4f7fe;
     margin: 0 auto;
-    margin-bottom: 10px;
   }
   .orders {
     background-color: #192672;
@@ -2708,12 +2710,15 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 700px;
+      height: 750px;
     }
     /* Header */
     .Section3-VideoGallery {
       color: #fff;
     }
+    .footer{
+  margin-top: 2850px;
+}
     .IT-wrapper {
       background-color: darkorange;
       width: 230px;
