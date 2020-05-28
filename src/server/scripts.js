@@ -1,4 +1,4 @@
-[
+export const scripts = [
   {
     "id": 1,
     "name": "Галерея",
@@ -70,5 +70,57 @@
     "download": "https://drive.google.com/uc?export=download&id=1ar98sYVP86alt9q0xc0VXNtcBZ2ajjZa",
     "type": "animation",
     "paragraph": "Слайдер сделан с помощью HTML и CSS, без JS как не странно. Очень плавний и удобний."
+  }
+]
+
+export const video = [
+  {
+    "id": 1,
+    "name": "JSlesson",
+    "videoSrc": "https://www.youtube.com/embed/KmTK8kub_gw",
+    "type": "videoScript"
+  },
+  {
+    "id": 2,
+    "name": "CSSposition",
+    "videoSrc": "https://www.youtube.com/embed/mpykT40_VBc",
+    "type": "videoAnimation"
+
+  },
+  {
+    "id": 3,
+    "name": "CSSkeyframe",
+    "videoSrc": "https://www.youtube.com/embed/GKgOOuTL0po",
+    "type": "videoAnimation"
+  },
+  {
+    "id": 4,
+    "name": "CSSkeyfram",
+    "videoSrc": "https://www.youtube.com/embed/NkmZl1Yy94Q",
+    "type": "videoAnimation"
+  },
+  {
+    "id": 5,
+    "name": "CSSkeyfra",
+    "videoSrc": "https://www.youtube.com/embed/iPV5GKeHyV4",
+    "type": "videoAnimation"
+  },
+  {
+    "id": 6,
+    "name": "CSSkeyfr",
+    "videoSrc": "https://www.youtube.com/embed/Bluxbh9CaQ0",
+    "type": "videoScript"
+  },
+  {
+    "id": 7,
+    "name": "CSSkeyf",
+    "videoSrc": "https://www.youtube.com/embed/-U885at954A",
+    "type": "videoScript"
+  },
+  {
+    "id": 8,
+    "name": "CSSkey",
+    "videoSrc": "https://www.youtube.com/embed/RfW4MwkT0hw",
+    "type": "videoScript"
   }
 ]

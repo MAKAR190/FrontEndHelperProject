@@ -1,8 +1,7 @@
 import './styles.css';
 import './aboutUs.css';
 import btn from './js/arrow';
-import scripts from './server/scripts.json';
-import video from './server/video.json';
+import { scripts,video } from './server/scripts';
 import nightMode from './js/nightMode';
 
 let array = scripts;

@@ -972,7 +972,7 @@ function myFunction(x) {
       round.style.filter = `drop-shadow(0 0 7.5px rgba(0,0,0,0.5))`;
     }
   }
-  mobileRound.addEventListener('click', myFunction);
+
 }
 
 round.addEventListener('click', eventHandler);
