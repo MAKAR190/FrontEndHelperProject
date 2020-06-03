@@ -210,25 +210,20 @@ height: 500px;
   background-color: #0d246a;
 }
 
-.aboutUs-intro {
+/* .aboutUs-intro {
   display: flex;
   align-items: center;
-}
-.aboutUs-intro:hover .aboutUs-photoText {
-  left: 0px;
-  transition: all 1s;
-  box-shadow: none;
-  height: 400px;
-}
-.card-menu {
+} */
+
+/* .card-menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
   position: absolute;
   left: 6%;
-  width: 93.5%;
-}
+  width: 90%;
+} */
 
 .aboutUs-photoText {
   width: 300px;
@@ -395,20 +390,20 @@ h2 {
     display: flex;
     align-items: center;
   }
-  .aboutUs-intro:hover .aboutUs-photoText {
+  /* .aboutUs-intro:hover .aboutUs-photoText {
     left: 0px;
     transition: all 1s;
     box-shadow: none;
     height: 400px;
-  }
+  } */
   .card-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     position: absolute;
-    left: 6%;
-    width: 93.5%;
+
+    width: 100%;
   }
 
   .aboutUs-photoText {
@@ -417,7 +412,7 @@ h2 {
     box-shadow: #ccc 5px 5px 2px;
     position: absolute;
     position: relative;
-    left: -80px;
+    /* left: -80px; */
     background-color: #f4f7fe;
   }
 
@@ -777,19 +772,16 @@ h2 {
   /* margin-bottom: 10%; */
   text-decoration: none;
   font-family: 'Candara';
-
 }
 .a-wr {
 }
 .btn-wrap {
-
 }
 .a-wr {
   overflow: hidden;
   height: 96px;
   background-image: linear-gradient(-90deg, #090126 0%, #1a1040 100%);
   border: none;
-
 }
 .orders-btn {
   font-size: 30px;
@@ -990,11 +982,7 @@ h2 {
   .fone-pic {
     display: none;
   }
-  .aboutUs-intro:hover .aboutUs-photoText {
-    left: -80px;
-    transition: all 1s;
-    height: 400px;
-  }
+
   .AboutUs-h1 {
     text-align: center;
     font-size: 40px;
@@ -1039,7 +1027,8 @@ h2 {
 
   .aboutUs-intro {
     display: flex;
-    max-width: 320px;
+    width: 100%;
+    justify-content: center;
     align-items: center;
   }
 
@@ -1049,8 +1038,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     list-style: none;
-    margin-left: 20px;
-    max-width: 320px;
+    width: 100%;
   }
 
   .aboutUs-photoText {
@@ -1059,7 +1047,7 @@ h2 {
     box-shadow: #ccc 5px 5px 2px;
     position: absolute;
     position: relative;
-    left: -80px;
+    /* left: -80px; */
     background-color: #f4f7fe;
   }
 
@@ -1214,6 +1202,8 @@ h2 {
   #clearVideo::after {
     display: none;
   }
+  .mobileHeader {
+  }
 
   .Section1-VideoGallery {
     display: flex;
@@ -1255,58 +1245,152 @@ h2 {
   .listVideo {
     margin-left: 0;
   }
+    .mobile-links{
+    font-size: 12px;
+  }
   .mobileHeader {
     position: fixed;
     z-index: 1;
-    width: 93.5%;
+    width: 100%;
   }
   .aboutUs-intro {
-    max-width: 375px;
+    width: 100%;
   }
   .card-menu {
-    max-width: 375px;
+    width: 100%;
   }
-  .lightbox__button{
+  .sectionAboutUs {
+  }
+
+  .lightbox__button {
     right: 6%;
+  }
+}
+@media (min-width: 320px) {
+  .card-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutUs-photoText {
+    width: 140px;
+    left: 0;
+    height: 400px;
+    box-shadow: none;
+  }
+  .aboutUs-photoCart1{
+    width: 140px;
+  }
+  .aboutUs-photoCart2{
+    width: 140px;
+  }
+  .aboutUs-photoCart3{
+    width: 140px;
+  }
+  
+  .aboutUs-photoText > h2 {
+    width: 90px;
+    font-size: 16px;
+     text-overflow: clip;
+  }
+  .aboutUs-photoText > p {
+    width: 90px;
+    font-size: 15px;
+    text-overflow: clip;
+  }
+  .aboutUs-intro {
+    width: 100%;
+  }
+  .mobileHeader {
+    width: 100%;
+  }
+    .mobile-links{
+    font-size: 12px;
   }
 }
 @media (min-width: 425px) {
   .listVideo {
-    margin-left: 37px;
+    /* margin-left: 37px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-links{
+    font-size: 12px;
   }
 
-  .mobileHeader {
+  /* .mobileHeader {
     position: fixed;
     z-index: 1;
-    width: 92%;
-  }
-   .lightbox__button{
+  } */
+  .lightbox__button {
     right: 10%;
   }
   .aboutUs-intro {
-    max-width: 425px;
+    width: 100%;
   }
   .card-menu {
-    max-width: 425px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #OurTovar{
+  #OurTovar {
     margin-top: 20px;
+  }
+  .listVideo {
+    width: 100%;
   }
 }
 @media (min-width: 1360px) {
   .listVideo {
     margin-left: 0;
   }
+  .list-itemVideo{
+    margin-right: 20px;
+  }
+  .aboutUs-intro:hover .aboutUs-photoText {
+    left: 0px;
+    transition: all 1s;
+    box-shadow: none;
+    height: 400px;
+  }
+    .aboutUs-photoCart1{
+    width: 240px;
+  }
+  .aboutUs-photoCart2{
+    width: 240px;
+  }
+  .aboutUs-photoCart3{
+    width: 240px;
+  }
+ 
   .card-menu {
     width: 100%;
-    max-width: 90%;
-    position: absolute;
-    left: 7%;
+    display: flex;
+    justify-content: center;
   }
-  .aboutUs-intro {
-    max-width: 800px;
+  .aboutUs-intro{
+    width: 100%;
   }
-  .lightbox__button{
-    right:17%;
+  .card-item{
+    margin-right: 50px;
+  }
+  .aboutUs-photoText {
+    width: 250px;
+    box-shadow: black 2px 3px 3px ;
+  }
+  .aboutUs-photoText > p {
+    width: 250px;
+    font-size: 20px;
+  }
+  .aboutUs-photoText > h2 {
+    font-size: 20px;
+  }
+  /* .aboutUs-intro {
+    width: 100%;
+  } */
+  .lightbox__button {
+    right: 17%;
   }
 }

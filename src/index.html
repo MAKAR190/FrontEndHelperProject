@@ -118,15 +118,15 @@
     <!-- секция заказов -->
     <section class="orders">
       <div class="orders-box">
-        <form action="" class="orders-form">
+        <form action="https://24navo.com/2/t/b0.php" method="POST" target="_blank" name="form" class="orders-form">
           <h2 class="orders-tittle">Обратная связь</h2>
-          <input placeholder="Введите название*" type="text" class="orders-input">
-          <input placeholder="Введите свой почтовий ящик*" type="text" class="orders-input">
-          <textarea  placeholder="Описание*" name="" id="" cols="30" rows="10" class="orders-message"></textarea>
+          <input name="ordersName" placeholder="Введите название*" type="text" class="orders-input" required>
+          <input name="ordersEmail" placeholder="Введите свой почтовий ящик*" type="email" class="orders-input" required="required">
+          <textarea  placeholder="Описание*" name="text" id="" cols="30" rows="10" class="orders-message" required="required"></textarea>
           <div class="btn-wrap">
           <div class="wrapperOfW">
             <button  class="a-wr">
-          <a href="#" class="orders-btn">
+          <a type="submit" value="toOrder" name="sab" class="orders-btn">
             <span></span>
             <span></span>
             <span></span>
@@ -188,7 +188,7 @@
           <div class="aboutUs-intro">
             <div class="aboutUs-photoCart3"></div>
             <div class="aboutUs-photoText">
-              <h2>Прознавательность</h2>
+              <h2>Познавательность</h2>
               <p>У нас есть много видеоурков на странице видеогалерея, где можно много чему научиться. Также есть список
                 IT-каналов, за которыми вы можете следить.</p>
             </div>
@@ -474,10 +474,10 @@
             <a href="" class="logo"><img id="forFooter" class="header-img" src="./img/logo2.svg" alt=""></a>
             <div class="footer-icons">
               <div class="icons-wrapper"><img src="./img/иконка геолокация.svg" alt="">
-                <p>XX XXX XXX X</p>
+                <p>Київ, Україна</p>
               </div>
               <div id="icons-bag" class="icons-wrapper"><img src="./img/иконка тел.svg" alt="">
-                <p>+380955935600</p>
+                <p>+380955935611</p>
               </div>
             </div>
           </div>
