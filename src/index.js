@@ -1,7 +1,7 @@
 import './styles.css';
 import './aboutUs.css';
 import btn from './js/arrow';
-import { scripts,video } from './server/scripts';
+import { scripts, video } from './server/scripts';
 import nightMode from './js/nightMode';
 
 let array = scripts;
@@ -150,3 +150,50 @@ document
       lightbox.classList.remove('is-open');
     }
   });
+
+const ordersBtn = document.querySelector('.orders-btn');
+ordersBtn.addEventListener('click', forOrders);
+
+function forOrders(e) {
+  e.preventDefault();
+  const inputEmail = document.querySelector('#forEmail');
+  const inputName = document.querySelector('#forName');
+  const inputDescr = document.querySelector('#forDescription');
+  if (inputEmail === '' && inputName === '' && inputDescr === '') {
+    return;
+  } else {
+    const object = {
+      recipients: ['lutskyimakar@gmail.com'],
+      fromName: 'MK',
+      params: [
+        {
+          key: 'email',
+          value: inputEmail.value,
+        },
+        {
+          key: 'name',
+          value: inputName.value,
+        },
+        {
+          key: 'text',
+          value: inputDescr.value,
+        },
+      ],
+    };
+    fetch(`https://esputnik.com/api/v1/message/2228660/send`, {
+      method: 'POST',
+      body: JSON.stringify(object),
+      headers: {
+        'Content-Type': 'application/json; charset=UTF-8',
+        Authorization: 'Basic bHV0c2t5aW1ha2FyQGdtYWlsLmNvbTpGRVBlbWFpbFBhcjE=',
+      },
+    })
+      .then(res => res.json())
+      .then(data => {
+        inputName.value = '';
+        inputEmail.value = '';
+        inputDescr.value = '';
+      })
+      .catch(err => new Error(err));
+  }
+}

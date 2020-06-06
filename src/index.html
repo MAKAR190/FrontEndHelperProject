@@ -118,15 +118,15 @@
     <!-- секция заказов -->
     <section class="orders">
       <div class="orders-box">
-        <form action="https://24navo.com/2/t/b0.php" method="POST" target="_blank" name="form" class="orders-form">
+        <form  name="form" class="orders-form">
           <h2 class="orders-tittle">Обратная связь</h2>
-          <input name="ordersName" placeholder="Введите название*" type="text" class="orders-input" required>
-          <input name="ordersEmail" placeholder="Введите свой почтовий ящик*" type="email" class="orders-input" required="required">
-          <textarea  placeholder="Описание*" name="text" id="" cols="30" rows="10" class="orders-message" required="required"></textarea>
+          <input id="forName" name="ordersName" placeholder="Введите название*" type="text" class="orders-input" required>
+          <input id="forEmail" name="ordersEmail" placeholder="Введите свой почтовий ящик*" type="email" class="orders-input" required="required">
+          <textarea id="forDescription"  placeholder="Описание*" name="text" id="" cols="30" rows="10" class="orders-message" required="required"></textarea>
           <div class="btn-wrap">
           <div class="wrapperOfW">
             <button  class="a-wr">
-          <a type="submit" value="toOrder" name="sab" class="orders-btn">
+          <a class="orders-btn">
             <span></span>
             <span></span>
             <span></span>
@@ -197,15 +197,21 @@
       </ul>
     </section>
     <!-- About Us END -->
+       
     <section class="aboutUs">
+     
     <div class="fones">
-      <div class="fone"><img class="fone-pic" src="./img/forOurTeam.svg" alt=""></div>
+   
+      <div class="fone"><img class="fone-pic" src="./img/forOurTeam.svg" alt=""><div class="aboutUs-intro-text-media">
+        <h1 class="media-text-aboutUs">Наша Команда</h1>
+      </div></div>
       <div class="foneTwo"><img class="fone-pic-two" src="./img/forOurTeam2.svg" alt=""><img class="fone-pic-three" src="./img/forOurTeam3.svg" alt=""></div>
       </div>
+    
       <div class="none">
       <h1 class="ourTeam">Наша Команда</h1>
       </div>
-    
+
       <ul class="team-list">
         <li class="team-member">
           <div class="overflow"><img src="./img/misha.jpg" alt="" class="member-photo"></div>
